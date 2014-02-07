@@ -27,7 +27,7 @@ function Vector3:IsNaN()
 end
 
 function BetterMinimap:Render()
-	if Game:GetState() ~= GUIState.Game or then return end
+	if Game:GetState() ~= GUIState.Game then return end
 
 	local updatedPlayers = {}
 	for player in Client:GetStreamedPlayers() do
